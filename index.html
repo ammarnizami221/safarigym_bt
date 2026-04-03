@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Gym | Bahria Town Rawalpindi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'montserrat': ['Montserrat', 'sans-serif'] },
+                    colors: { 'safari-gold': '#FFD700', 'safari-dark': '#0A0A0A' },
+                    animation: { 'pulse-glow': 'pulse-glow 2s ease-in-out infinite' },
+                    keyframes: {
+                        'pulse-glow': {
+                            '0%, 100%': { boxShadow: '0 0 15px rgba(255, 215, 0, 0.3)' },
+                            '50%': { boxShadow: '0 0 30px rgba(255, 215, 0, 0.6)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #000; }
+        .hero-bg { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), 
+            url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070');
+            background-size: cover; background-position: center;
+        }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body class="text-white">
+
+    <a href="https://wa.me/923304933387" target="_blank" class="fixed bottom-6 right-6 z-[100] bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform duration-300 animate-bounce">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-black text-safari-gold tracking-tighter">SAFARI GYM</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-widest">
+                <a href="#home" class="hover:text-safari-gold transition">Home</a>
+                <a href="#services" class="hover:text-safari-gold transition">Services</a>
+                <a href="#about" class="hover:text-safari-gold transition">About</a>
+                <a href="#register" class="hover:text-safari-gold transition text-safari-gold">Join Now</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-safari-gold text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center bg-black py-6 space-y-4 border-t border-white/10 mt-4">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#register" class="text-safari-gold font-bold">Join Now</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-5xl">
+            <h1 class="text-5xl md:text-8xl font-black mb-4 tracking-tighter italic">RESPECT THE <span class="text-safari-gold">IRON</span></h1>
+            <p class="text-xl md:text-3xl font-light mb-8 text-gray-300">FEED THE PRIMAL. BECOME UNSTOPPABLE.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#register" class="bg-safari-gold text-black font-black px-10 py-4 rounded-sm hover:bg-yellow-500 transition-all animate-pulse-glow uppercase tracking-widest">Start Transformation</a>
+                <a href="tel:0515707083" class="border border-white/30 px-10 py-4 rounded-sm hover:bg-white/10 transition uppercase tracking-widest font-bold">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 bg-safari-dark">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-center text-4xl font-black mb-16 tracking-widest uppercase"><span class="text-safari-gold">Our</span> Disciplines</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="glass-card p-8 rounded-xl hover:border-safari-gold transition group">
+                    <i class="fas fa-burn text-4xl text-safari-gold mb-6"></i>
+                    <h3 class="text-xl font-bold mb-2 uppercase">Aerobics</h3>
+                    <p class="text-gray-400 text-sm">High intensity cardio to torch fat and boost endurance.</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl hover:border-safari-gold transition">
+                    <i class="fas fa-leaf text-4xl text-safari-gold mb-6"></i>
+                    <h3 class="text-xl font-bold mb-2 uppercase">Yoga</h3>
+                    <p class="text-gray-400 text-sm">Master your mind and mobility with expert guidance.</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl hover:border-safari-gold transition">
+                    <i class="fas fa-dumbbell text-4xl text-safari-gold mb-6"></i>
+                    <h3 class="text-xl font-bold mb-2 uppercase">Heavy Lifting</h3>
+                    <p class="text-gray-400 text-sm">World-class machines and free weights for raw power.</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl hover:border-safari-gold transition">
+                    <i class="fas fa-apple-alt text-4xl text-safari-gold mb-6"></i>
+                    <h3 class="text-xl font-bold mb-2 uppercase">Nutrition Bar</h3>
+                    <p class="text-gray-400 text-sm">Post-workout fuel and premium supplements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="py-24 px-6 bg-black relative">
+        <div class="max-w-4xl mx-auto glass-card p-8 md:p-16 rounded-3xl border-safari-gold/20">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-black text-safari-gold uppercase mb-2">Free Registration</h2>
+                <p class="text-gray-400">Claim your spot at Bahria Town's elite fitness hub.</p>
+            </div>
+            
+            <form action="https://formspree.io/f/mkopqwgn" method="POST" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-500 mb-2">Full Name</label>
+                        <input type="text" name="name" required class="w-full bg-white/5 border border-white/10 p-4 rounded-lg focus:border-safari-gold outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-500 mb-2">Phone Number</label>
+                        <input type="tel" name="phone" required class="w-full bg-white/5 border border-white/10 p-4 rounded-lg focus:border-safari-gold outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-500 mb-2">Select Interest</label>
+                    <select name="service" class="w-full bg-white/5 border border-white/10 p-4 rounded-lg focus:border-safari-gold outline-none transition appearance-none">
+                        <option class="bg-black">Weight Lifting</option>
+                        <option class="bg-black">Yoga / Aerobics</option>
+                        <option class="bg-black">Personal Training</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-safari-gold text-black font-black p-5 rounded-lg uppercase tracking-widest hover:bg-yellow-500 transition shadow-xl">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 bg-safari-dark px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <h4 class="text-safari-gold font-black text-xl mb-4 uppercase">Location</h4>
+                <p class="text-gray-400"><br>Bahria Town, Rawalpindi, 46000</p>
+            </div>
+            <div>
+                <h4 class="text-safari-gold font-black text-xl mb-4 uppercase">Inquiries</h4>
+                <p class="text-gray-400">051 5707083<br>0330 4933387</p>
+            </div>
+            <div>
+                <h4 class="text-safari-gold font-black text-xl mb-4 uppercase">Follow Us</h4>
+                <div class="flex justify-center md:justify-start space-x-6 text-2xl">
+                    <a href="https://www.instagram.com/safarigym_bt/" class="hover:text-safari-gold transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-safari-gold transition"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-gray-600 text-xs mt-16 uppercase tracking-widest">&copy; 2026 Safari Gym. Built for Primal Strength.</p>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Hide menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'bg-black');
+                nav.classList.remove('py-4', 'bg-black/80');
+            } else {
+                nav.classList.remove('py-2', 'bg-black');
+                nav.classList.add('py-4', 'bg-black/80');
+            }
+        });
+    </script>
+</body>
+</html>
